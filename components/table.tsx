@@ -119,9 +119,8 @@ export const Table = (): JSX.Element => {
           ]}
           title={
             <div className="header">
-              <img alt="logo" src="/netatmologo.png" />
-              <a href="https://netatmo-graph.vercel.app/">
-                Home Environment Dashboard
+              <a href="https://plant-check-graph.vercel.app/">
+                Plant Check Dashboard
               </a>
             </div>
           }
