@@ -1,8 +1,4 @@
 import { ApolloClient, gql, InMemoryCache } from '@apollo/client'
-import dayjs from '../components/table'
-import utc from 'dayjs/plugin/utc'
-import timezone from 'dayjs/plugin/timezone'
-
 const fs = require('fs');
 const axios = require('axios');
 
