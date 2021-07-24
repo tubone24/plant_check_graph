@@ -1,6 +1,6 @@
 import { ApolloClient, gql, InMemoryCache } from '@apollo/client'
-const fs = require('fs');
-const axios = require('axios');
+import fs from 'fs'
+import axios from 'axios'
 
 const filePath = './cypress/screenshots/screenshot.spec.js/screenShot.png';
 const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
