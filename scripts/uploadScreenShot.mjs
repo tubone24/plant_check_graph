@@ -8,7 +8,9 @@ const filePath = './cypress/screenshots/screenshot.spec.js/screenShot.png';
 const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
 const imgurClientId = process.env.IMGUR_CLIENT_ID;
 
-const URI_ENDPOINT = "https://crisp-muskox-39.hasura.app/v1/graphql";
+const URI_ENDPOINT = 'https://crisp-muskox-39.hasura.app/v1/graphql';
+
+const dashBoardUrl = 'https://plant-check-graph.vercel.app/'
 
 const client = new ApolloClient({
   link: new HttpLink({ uri: URI_ENDPOINT, fetch }),
@@ -45,7 +47,7 @@ axios.post('https://api.imgur.com/3/image', data, config).then((resp) => {
   }).then((resp) => {
     const latestData = resp.data.raspi_plant_checker[resp.data.raspi_plant_checker.length - 1]
     const slackPayload = {
-      text: `*How are you?* \n<${netatmoUrl}|Click here> for details! \n${imageLink}`,
+      text: `*How are you?* \n<${dashBoardUrl}|Click here> for details! \n${imageLink}`,
       attachments: [
         {
           fields: [
