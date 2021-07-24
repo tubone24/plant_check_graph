@@ -1,4 +1,4 @@
-import { ApolloClient, gql } from '@apollo/client'
+import { ApolloClient, gql, HttpLink  } from '@apollo/client'
 // "fetch" has not been found globally and no fetcher has been configured. To fix this, install a fetch package (like https://www.npmjs.com/package/cross-fetch), instantiate the fetcher, and pass it into your HttpLink constructor.
 import fetch from 'cross-fetch';
 import fs from 'fs'
