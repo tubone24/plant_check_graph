@@ -1,4 +1,4 @@
-import { ApolloClient, gql, HttpLink  } from '@apollo/client'
+import { ApolloClient, gql, HttpLink, InMemoryCache  } from '@apollo/client'
 // "fetch" has not been found globally and no fetcher has been configured. To fix this, install a fetch package (like https://www.npmjs.com/package/cross-fetch), instantiate the fetcher, and pass it into your HttpLink constructor.
 import fetch from 'cross-fetch';
 import fs from 'fs'
@@ -11,7 +11,8 @@ const imgurClientId = process.env.IMGUR_CLIENT_ID;
 const URI_ENDPOINT = "https://crisp-muskox-39.hasura.app/v1/graphql";
 
 const client = new ApolloClient({
-  link: new HttpLink({ uri: URI_ENDPOINT, fetch })
+  link: new HttpLink({ uri: URI_ENDPOINT, fetch }),
+  cache: new InMemoryCache()
 });
 
 const base64Data = fs.readFileSync(filePath, { encoding: 'base64' });
