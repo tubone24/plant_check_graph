@@ -2,13 +2,11 @@ import { ApolloClient, gql, InMemoryCache } from '@apollo/client'
 import dayjs from '../components/table'
 import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
 const fs = require('fs');
 const axios = require('axios');
 
 const filePath = './cypress/screenshots/screenshot.spec.js/screenShot.png';
-const netatmoUrl = 'https://plant-check-graph.vercel.app/';
 const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
 const imgurClientId = process.env.IMGUR_CLIENT_ID;
 
