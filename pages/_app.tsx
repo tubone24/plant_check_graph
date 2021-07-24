@@ -22,7 +22,7 @@ const App = ({ Component, pageProps }: AppProps) => (
         <meta name="keywords" content="" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://plant-check-graph.vercel.app/" />
-        <meta property="og:image" content="https://i.imgur.com/bnJMK70.png" />
+        <meta property="og:image" content="https://i.imgur.com/8wo4a9Q.png" />
         <meta property="og:site_name" content="Plant Check Dashboard" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@meitante1conan" />
@@ -32,7 +32,7 @@ const App = ({ Component, pageProps }: AppProps) => (
           name="twitter:description"
           content="Let's visualize the environment of your plant by raspi_plant_checker."
         />
-        <meta name="twitter:image" content="https://i.imgur.com/bnJMK70.png" />
+        <meta name="twitter:image" content="https://i.imgur.com/8wo4a9Q.png" />
         <meta property="fb:app_id" content="280941406476272" />
         <link rel="canonical" href="https://plant-check-graph.vercel.app/" />
         <link rel="apple-touch-icon" href="https://i.imgur.com/bnJMK70.png" />
